@@ -74,6 +74,7 @@ class App extends Component {
   render() {
     const { filter } = this.state;
     const visibleContacts = this.getVisibleContacts();
+    const isContacts = Boolean(visibleContacts.length);
 
     return (
       <div className={css.wrapper}>
@@ -82,10 +83,12 @@ class App extends Component {
 
         <h2>Contacts</h2>
         <Filter value={filter} onChange={this.handleFilter} />
+
         <ContactsList
           contacts={visibleContacts}
           deleteContact={this.deleteContact}
         />
+        {!isContacts && <p className={css.text}>No contacts in list</p>}
       </div>
     );
   }

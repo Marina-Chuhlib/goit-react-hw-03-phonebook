@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   margin-left: 20px;
   font-weight: 500;
-  width: fit-content;
+  max-width: 200px;
 }
 
 .input {

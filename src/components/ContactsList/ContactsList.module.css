@@ -15,10 +15,6 @@ p {
   font-size: 18px;
 }
 
-.item:not(:last-child) {
-  /* margin-bottom: 4px; */
-}
-
 .contact {
   margin-right: 15px;
 }
@@ -28,7 +24,7 @@ p {
 }
 
 .button {
-  display: flex;
+  max-height: 32px;
   padding: 5px 8px;
   cursor: pointer;
   border: none;
